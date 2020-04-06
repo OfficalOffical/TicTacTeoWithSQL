@@ -1,1 +1,12 @@
+cmake_minimum_required(VERSION 3.15)
+project(SQLTitTacTeo)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_MODULE_PATH "C:/Users/sefak/Desktop/FindSQL")
+find_package(MySQL REQUIRED)
+
+include_directories(${MYSQL_INCLUDE_DIR})
+
+add_executable(SQLTitTacTeo main.cpp SQL.cpp SQL.h)
 
