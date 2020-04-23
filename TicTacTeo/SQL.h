@@ -1,20 +1,15 @@
-//
-// Created by sefak on 24.03.2020.
-//
-
-#ifndef SQLTITTACTEO_SQL_H
-#define SQLTITTACTEO_SQL_H
+#pragma once
 
 #include <iostream>
+#include <sstream>
 #include "mysql.h"
 
+using namespace std;
 
-
-class SQL {
-  static void Creator() ;
-
+class ConMake
+{
+public:
+	static int mainCon(MYSQL* conn);	
 
 };
 
-
-#endif //SQLTITTACTEO_SQL_H
