@@ -14,16 +14,12 @@ int control[9];
 //Can be upgraded by adding do you want to play again and creating new tables on sql by it
 int main()
 {
-  
-    
     MYSQL * connect;
     connect = mysql_init(0);
     ConMake::mainCon(connect);
     string p1;
     string p2;
     
-
-
     init(control);
     int a = 0;
 
@@ -60,11 +56,9 @@ bool table(int input) {
         if (*p == 0) {
             sayac % 2 == 0 ? a = 'X' : a = 'O';
             *p = 1;
-
         }
         else
             sayac--;
-
         break;
     case 2:
         if (*(p + 1) == 0) {
@@ -73,7 +67,6 @@ bool table(int input) {
         }
         else
             sayac--;
-
         break;
     case 3:
         if (*(p + 2) == 0) {
@@ -82,7 +75,6 @@ bool table(int input) {
         }
         else
             sayac--;
-
         break;
     case 4:
         if (*(p + 3) == 0) {
@@ -91,7 +83,6 @@ bool table(int input) {
         }
         else
             sayac--;
-
         break;
     case 5:
         if (*(p + 4) == 0) {
@@ -100,7 +91,6 @@ bool table(int input) {
         }
         else
             sayac--;
-
         break;
     case 6:
         if (*(p + 5) == 0) {
@@ -109,7 +99,6 @@ bool table(int input) {
         }
         else
             sayac--;
-
         break;
     case 7:
         if (*(p + 6) == 0) {
@@ -118,7 +107,6 @@ bool table(int input) {
         }
         else
             sayac--;
-
         break;
     case 8:
         if (*(p + 7) == 0) {
@@ -128,7 +116,6 @@ bool table(int input) {
         }
         else
             sayac--;
-
         break;
     case 9:
         if (*(p + 8) == 0) {
@@ -136,8 +123,7 @@ bool table(int input) {
             *(p + 8) = 1;
         }
         else
-            sayac--;
-
+            sayac--;++
         break;
     }
 
