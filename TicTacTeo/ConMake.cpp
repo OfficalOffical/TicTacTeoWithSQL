@@ -1,7 +1,7 @@
 #include "ConMake.h"
 
 int ConMake::mainCon(MYSQL * conn) {
-   conn = mysql_real_connect(conn, "srvc65.turhost.com", "sefakalk_sef", "sefakalkan!", "sefakalk_HomeWork", 3306, NULL, 0);
+   conn = mysql_real_connect(conn, "foo", "bar", "foo", "bar", 3306, NULL, 0);
 
    if (conn) {
       cout << "Successfully connected to Database" << endl;
