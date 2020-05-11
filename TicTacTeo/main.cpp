@@ -7,7 +7,9 @@ int init(int* p);
 int isEnd = 0;
 int sayac = 0;
 char a = '1', b = '2', c = '3', d = '4', e = '5', f = '6', g = '7', h = '8', i = '9';
+
 int control[9];
+
 //If unbounded number entered it brokes game bcs of counter (sayac) can be solved in switch case 
 //Can be upgraded by adding do you want to play again and creating new tables on sql by it
 int main() {
@@ -21,8 +23,7 @@ int main() {
     int b = 0;
     int c = 0;
     int d = 1;
-    init(control);
-
+    
     std::cout << "What you want to do : \n1)Play the game\n2)Wiew SQL data\n3)Delete data inside the SQL\n4)Exit" << endl;
     cin >> c;
     while (d) {
@@ -45,6 +46,9 @@ int main() {
 
                 }
                 std::cout << "What you want next : \n1)Play the game\n2)Wiew SQL data\n3)Delete data inside the SQL\n4)Exit" << endl;
+                a = 0;
+                b = 0;
+                init(control);
                 cin >> c;
                 break;
             }
@@ -76,6 +80,9 @@ int init(int* p) {
         *p = 0;
         p++;
     }
+    a = '1', b = '2', c = '3', d = '4', e = '5', f = '6', g = '7', h = '8', i = '9';
+    isEnd = 0;
+    sayac = 0;
     return 0;
 };
 
